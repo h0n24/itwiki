@@ -61,7 +61,7 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: true,
-  footerEditLink: 'Editovat tuhle stránku na GitHubu',
+  footerEditLink: 'Editovat tuto stránku na GitHubu',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
   unstable_faviconGlyph: '❤',
 }

@@ -1,55 +1,55 @@
-import Bleed from 'nextra-theme-docs/bleed'
-
 # Firemní e-mail neboli přihlášení do Microsoft Exchange Cloud
 Protože většina důležité firemní komunikace probíhá přes e-maily, je dobré se do e-mailové schránky přihlásit co nejdříve, aby se zjistilo, že vše správně funguje.
 
+## Přihlášení
+
 E-mail vypadá obvykle ve formátu `jméno@itstep.academy`.
 
-Protože e-mail má dvoufaktorovou autentifikaci, 
-
-K úplně přihlášení se využívá Authenticator, mobilní aplikace od Microsoftu, kterou je třeba pro účely přihlášení mít nainstalovanou v mobilním telefonu.
+Protože e-mail používá dvoufaktorovou autentifikaci, k přihlášení je potřeba mobilní aplikace od Microsoftu zvaná Authenticator ([Google Play](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=cs&gl=US), [Apple Store](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)), kterou je třeba pro účely přihlášení mít nainstalovanou v mobilním telefonu.
 
 Adresa pro přihlášení je [login.microsoftonline.com](https://login.microsoftonline.com/).
 
 Poté, co se úspěšně přihlásíte na odkaze výše, je možné rovnou přejít do e-mailu z adresy [outlook.office.com](https://outlook.office.com/).
 
-# Časté problémy
 
-## Špatně zadaná adresa, případ account.microsoft.com
+### Nejčastější problémy
+
+Nejčastější problémy souvisí se špatně zadanou URL adresou. 
+
+#### Špatná URL: account.microsoft.com
 
 Použije-li se nesprávná adresa, tj. [account.microsoft.com](https://account.microsoft.com/), zobrazí se chybové hlášení:
 
+```txt
+AADSTS50020: User account 'jmeno@itstep.academy' from identity provider 'https://sts.windows.net/1c2aa41e-5b92-4906-827e-0c10f9d73859/' does not exist in tenant 'Microsoft' and cannot access the application '71dada86-21db-493b-93e4-1a902601f30f'(OneRenderFramework [wsfed enabled]) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with a different Azure Active Directory user account.
 ```
-AADSTS50020: User account 'jméno@itstep.academy' from identity provider 'sts.windows.net/1c2aa41e-5b92-4906-827e-0c10f9d73859/' does not exist in tenant 'Microsoft' and cannot access the application '71dada86-21db-493b-93e4-1a902601f30f'(OneRenderFramework [wsfed enabled]) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with a different Azure Active Directory user account.
-```
 
-### Celá chyba pak vypadá takto:
+##### Celá chyba pak vypadá takto:
 
-<Bleed>
-  <a href="/images/email-wrong-link-account.jpg" title="Ukázka špatně zadané adresy - případ account.microsoft.com">
-    <picture>
-      <source srcset="/images/email-wrong-link-account.avif" type="image/avif" />
-      <source srcset="/images/email-wrong-link-account.webp" type="image/webp" />
-      <img src="/images/email-wrong-link-account.jpg" alt="Ukázka špatně zadané adresy - případ account.microsoft.com" />
-    </picture>
-  </a>
-</Bleed>
 
-## Špatně zadaná adresa, případ login.live.com
+<a href="/images/email-wrong-link-account.jpg" title="Ukázka špatně zadané adresy - případ account.microsoft.com">
+  <picture>
+    <source srcset="/images/email-wrong-link-account.avif" type="image/avif" />
+    <source srcset="/images/email-wrong-link-account.webp" type="image/webp" />
+    <img src="/images/email-wrong-link-account.jpg" alt="Ukázka špatně zadané adresy - případ account.microsoft.com" />
+  </picture>
+</a>
+
+
+#### Špatná URL: login.live.com
 
 Použije-li se nesprávná adresa, tj. [login.live.com](https://login.live.com/), zobrazí se chybové hlášení:
 
-```
+```txt
 Tento účet neexistuje. Zadejte jiný účet nebo získejte nový.
 ```
 
-### Celá chyba pak vypadá takto:
-<Bleed>
-  <a href="/images/email-wrong-link-live.png" title="Ukázka špatně zadané adresy - případ login.live.com">
-    <picture>
-      <source srcset="/images/email-wrong-link-live.avif" type="image/avif" />
-      <source srcset="/images/email-wrong-link-live.webp" type="image/webp" />
-      <img src="/images/email-wrong-link-live.png" alt="Ukázka špatně zadané adresy - případ login.live.com" />
-    </picture>
-  </a>
-</Bleed>
+##### Celá chyba pak vypadá takto:
+
+<a href="/images/email-wrong-link-live.png" title="Ukázka špatně zadané adresy - případ login.live.com">
+  <picture>
+    <source srcset="/images/email-wrong-link-live.avif" type="image/avif" />
+    <source srcset="/images/email-wrong-link-live.webp" type="image/webp" />
+    <img src="/images/email-wrong-link-live.png" alt="Ukázka špatně zadané adresy - případ login.live.com" />
+  </picture>
+</a>

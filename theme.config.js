@@ -1,12 +1,12 @@
 export default {
-  github: 'https://github.com/shuding/nextra',
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Nextra',
+  github: 'https://github.com/h0n24/itwiki/',
+  docsRepositoryBase: 'https://github.com/h0n24/itwiki/blob/master',
+  titleSuffix: ' – IT wiki',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">IT wiki</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
+        Návody a rady pro výuku v IT Step
       </span>
     </>
   ),
@@ -15,16 +15,16 @@ export default {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Nextra: the Next.js site builder" />
-      <meta name="og:description" content="Nextra: the Next.js site builder" />
+      <meta httpEquiv="Content-Language" content="cs" />
+      <meta name="description" content="IT wiki: Návody a rady pro výuku v IT Step" />
+      <meta name="og:description" content="IT wiki: Návody a rady pro výuku v IT Step" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
-      <meta name="og:title" content="Nextra: Next.js static site generator" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="Nextra" />
+      <meta name="twitter:image" content="https://itwiki.vercel.app/og.png" />
+      <meta name="twitter:site:domain" content="itwiki.vercel.app" />
+      <meta name="twitter:url" content="https://itwiki.vercel.app" />
+      <meta name="og:title" content="IT wiki: Návody a rady pro výuku v IT Step" />
+      <meta name="og:image" content="https://itwiki.vercel.app/og.png" />
+      <meta name="apple-mobile-web-app-title" content="IT wiki" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -61,7 +61,7 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: true,
-  footerEditLink: 'Edit this page on GitHub',
+  footerEditLink: 'Editovat tuhle stránku na GitHubu',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
-  unstable_faviconGlyph: '👋',
+  unstable_faviconGlyph: '❤',
 }

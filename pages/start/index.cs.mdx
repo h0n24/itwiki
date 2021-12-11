@@ -1,3 +1,9 @@
+export const SeeAlso = ({ text }) => (
+  <div class="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
+    {text}
+  </div>
+);
+
 # První kroky
 
 ## Začátek v IT Step
@@ -10,17 +16,9 @@ Každého nového lektora čeká **proces integrace**. Ta probíhá přes intera
   Jak uspět v integraci? Více informací v <a href="start/sintegrum">podstránce integrace</a>.
 </div>
 
-Jak uspět v integraci? Více informací v [podstránce integrace](start/sintegrum).
-
-export const Stars = ({ children }) => (
-  <div class="border">
-    {children}
-  </div>
-);
-
-<Stars>
-  test text
-</Stars>
+<SeeAlso>
+  Jak uspět v integraci? Více informací v [podstránce integrace](start/sintegrum).
+</SeeAlso>
 
 ## Nejdůležitější dva kroky
 Nejkritičtější dva kroky, abyste mohli začít, je správné nastavení VPN a přihlášení k firemnímu emailu.

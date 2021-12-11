@@ -12,9 +12,11 @@ Každého nového lektora čeká **proces integrace**. Ta probíhá přes intera
 
 Jak uspět v integraci? Více informací v [podstránce integrace](start/sintegrum).
 
-export const Stars = (userText) => {
-  return <></>;
-}
+export const Stars = ({ children }) => (
+  <Stars source="border">
+    {children}
+  </Stars>
+);
 
 <Stars>
   test text

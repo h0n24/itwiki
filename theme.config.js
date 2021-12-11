@@ -63,7 +63,6 @@ export default {
   footer: true,
   footerEditLink: 'Editovat tuto stránku na GitHubu',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
-  unstable_faviconGlyph: '❤',
   i18n: [
     { locale: 'cs', text: 'Čeština' },
     { locale: 'en', text: 'English' },

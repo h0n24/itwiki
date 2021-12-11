@@ -10,15 +10,17 @@ Každého nového lektora čeká **proces integrace**. Ta probíhá přes intera
   Jak uspět v integraci? Více informací v <a href="start/sintegrum">podstránce integrace</a>.
 </div>
 
-Jak uspět v integraci? Více informací v [podstránce integrace](sintegrum).
+Jak uspět v integraci? Více informací v [podstránce integrace](start/sintegrum).
 
-export const Stars = () => {
+export const Stars = (userText) => {
   // Get the data from SSG, and render it as a component.
   const { stars } = "test"
-  return <strong>test</strong>
+  return <strong>{userText}</strong>
 }
 
-<Stars />
+<Stars>
+  test text
+</Stars>
 
 ## Nejdůležitější dva kroky
 Nejkritičtější dva kroky, abyste mohli začít, je správné nastavení VPN a přihlášení k firemnímu emailu.

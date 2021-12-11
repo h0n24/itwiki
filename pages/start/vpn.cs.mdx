@@ -1,18 +1,55 @@
+import Bleed from 'nextra-theme-docs/bleed'
+
 # VPN neboli Virtuální privátní síť
 Bez VPN se nelze připojit k našim systémům, protože řada z nich není přístupná veřejnosti jen tak. Je tedy třeba mít svůj vlastní přístup do VPN.
 
 ## Jak se připojit
 
 ### Krok za krokem
-1. Připravte si *soubor s konfigurací klienta* pro VPN. 
-2. Je třeba mít *nainstalovaný software pro VPN* (anglicky VPN software). Je třeba 
-
+1. Připravte si **soubor s konfigurací klienta** pro VPN. 
+2. Nainstalujte **software pro VPN**, například [OpenVPN Connect](https://openvpn.net/vpn-client/).
+3. Po spuštění vložte soubor s konfigurací do **klienta**.
+4. Přihlašte se k VPN.
+5. Otestujte, zda VPN funguje připojením se do LogBooku.
 
 ### Konfigurační soubor
 Bez souboru s konfigurací klienta pro VPN (anglicky client config) se nelze přes VPN připojit.
 
-Odkaz na konfigurační soubor naleznete v emailu. Jmenuje se například takto: *ITSTEP.ovpn*
-
+Odkaz na konfigurační soubor naleznete v emailu. Jmenuje se například takto: `ITSTEP.ovpn`
 
 ### Software pro VPN
-TODO: dopsat
+Na všech operačních systémech (Windows, Mac OS apod.), funguje velmi dobře open source program [OpenVPN Connect](https://openvpn.net/vpn-client/). Doporučuji.
+
+Jako alternativa pro Mac OS se dá použít [Tunnelblick](https://tunnelblick.net/).
+
+
+## Video návod
+Všechny video návody jsou anglicky.
+
+### OpenVPN, starší verze 2.4.7
+*Upozornění*: jedná se o starší verzi OpenVPN (2.4.7). Dnes software vypadá trochu jinak. Princip instalace a princip fungování ale zůstal nezměněn. Dole naleznete video návod.
+
+<Bleed>
+  <iframe
+    width="100%"
+    height="480"
+    src="https://drive.google.com/file/d/1QcTwAqPepfskjrit4zZMZK6qapNkAvnw/preview"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  />
+</Bleed>
+
+### Tunnelblick
+Tunnelblick je program pro připojení k VPN. Je velmi dobře známý na Mac OS. Níže naleznete video návod.
+
+<Bleed>
+  <iframe
+    width="100%"
+    height="430"
+    src="https://drive.google.com/file/d/1O8UZe0gkpBHL_doqFGWcvH-nv0CdRtUL/preview"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  />
+</Bleed>

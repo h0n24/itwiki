@@ -10,21 +10,23 @@ module.exports = withNextra({
     defaultLocale: 'default',
     localeDetection: false,
   },
-  async redirects() {
-    return [
-      {
-        source: '/default',
-        destination: '/en',
-        locale: false,
-        permanent: false,
-      },
-      {
-        source: '/default/:slug*',
-        destination: '/en/:slug*',
-        locale: false,
-        permanent: false,
-      },
-    ]
-  }
+async redirects() {
+    return JSON.parse(
+      JSON.stringify([
+        {
+          source: '/default',
+          destination: '/cs',
+          locale: false,
+          permanent: false,
+        },
+        {
+          source: '/default/(!public/):slug*',
+          destination: '/cs/:slug*',
+          locale: false,
+          permanent: false,
+        },
+      ])
+    );
+  },
 });
 

@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default ({ children }) => {
+export default function Test({ children }) {
   return <div>{children}</div>
 }

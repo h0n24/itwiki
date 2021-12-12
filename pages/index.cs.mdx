@@ -1,22 +1,13 @@
-export const Links2 = ({ prevName, prevLink, nextName, nextLink }) => (
-  <footer class="mt-24" style={{marginBottom: "-6rem"}}>
-    <div class="flex flex-row items-center justify-between">
-      <div>
-        <a class="text-lg font-medium p-4 -ml-4 no-underline text-gray-600 hover:text-blue-600 flex items-center mr-2" title={prevName} href={prevLink}><svg height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform inline flex-shrink-0 rotate-180 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>{prevName}</a>
-        </div>
-      <div>
-        <a class="text-lg font-medium p-4 -mr-4 no-underline text-gray-600 hover:text-blue-600 flex items-center ml-2" title={nextName} href={nextLink}>{nextName}<svg height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform inline flex-shrink-0 ml-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>¨
-      </div>
-    </div>
-  </footer>
-);
-
 export const Links = ({ children }) => (
   <footer class="mt-24" style={{marginBottom: "-6rem"}}>
     <div class="flex flex-row items-center justify-between">
       {children}
     </div>
   </footer>
+);
+
+export const BlankPage = () => (
+  <div></div>
 );
 
 export const PrevPage = ({name, link}) => (
@@ -58,8 +49,6 @@ Další užitečné stránky jsou [Test spojení](connection-test) před začát
 
 
 <Links>
-  <PrevPage name="Test" link="start/problems"></PrevPage>
-  <NextPage>První kroky stránka</NextPage>
+  <BlankPage />
+  <NextPage name="Test" link="start/problems" />
 </Links>
-
-<Links2 prevName="Test1" prevLink="start/problems" nextName="První kroky" nextLink="start/problems" />

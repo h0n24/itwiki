@@ -1,6 +1,6 @@
 {
   "index": "Home",
   "start": "Get Started",
-  "connection-test": "Connection test",
+  "connectionTest": "Connection test",
   "teach": "Lessons"
 }

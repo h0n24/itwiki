@@ -69,7 +69,7 @@ export default {
   search: true,
   prevLinks: false,
   nextLinks: false,
-  footer: <span>Hello!</span>,
+  footer: false,
   footerEditLink: 'Editovat tuto stránku na GitHubu',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
   i18n: [

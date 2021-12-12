@@ -1,7 +1,5 @@
-import Test from './test.mdx'
-
 export const Links = ({ children }) => (
-  <footer class="mt-24">
+  <footer class="mt-24" style={marginBottom: "-6rem"}>
     <div class="flex flex-row items-center justify-between">
       {children}
     </div>
@@ -50,5 +48,3 @@ Další užitečné stránky jsou [Test spojení](connection-test) před začát
   <PrevPage name="Test" link="start/problems"></PrevPage>
   <NextPage>První kroky stránka</NextPage>
 </Links>
-
-<Test>Toto je test</Test>

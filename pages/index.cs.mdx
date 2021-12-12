@@ -12,7 +12,7 @@ export const PrevPage = ({name, link}) => (
   <div><a class="text-lg font-medium p-4 -ml-4 no-underline text-gray-600 hover:text-blue-600 flex items-center mr-2" title={name} href={link}><svg height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform inline flex-shrink-0 rotate-180 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>{name}</a></div>
 );
 
-export const NextPage = ({ children }) => (
+export const NextPage = ({name, link}) => (
   <div><a class="text-lg font-medium p-4 -mr-4 no-underline text-gray-600 hover:text-blue-600 flex items-center ml-2" title={name} href={link}>{name}<svg height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform inline flex-shrink-0 ml-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div>
 );
 

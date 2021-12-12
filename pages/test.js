@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const Test = ({ children }) => {
+export default function Test({ children }) {
   return <div>{children}</div>
 }

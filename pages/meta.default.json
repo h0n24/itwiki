@@ -1,1 +1,6 @@
-{ "index": "Language" }
+{
+  "index": "Home",
+  "start": "Get Started",
+  "connection-test": "Connection test",
+  "teach": "Lessons"
+}

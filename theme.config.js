@@ -60,11 +60,11 @@ export default {
   search: true,
   prevLinks: true,
   nextLinks: true,
-  footer: true,
+  footer: false,
   footerEditLink: 'Editovat tuto stránku na GitHubu',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
   i18n: [
     { locale: 'cs', text: 'Čeština' },
-    { locale: 'en', text: 'English' },
+    { locale: 'en', text: 'English' }
   ]
 }

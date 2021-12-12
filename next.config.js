@@ -10,7 +10,8 @@ module.exports = withNextra({
     defaultLocale: 'default',
     localeDetection: false,
   },
-async redirects() {
+  trailingSlash: true,
+  async redirects() {
     return JSON.parse(
       JSON.stringify([
         {

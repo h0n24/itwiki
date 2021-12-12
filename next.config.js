@@ -11,4 +11,22 @@ module.exports = withNextra({
     localeDetection: false,
   },
   trailingSlash: true,
+  async redirects() {
+    return JSON.parse(
+      JSON.stringify([
+        {
+          source: '/default',
+          destination: '/cs',
+          locale: false,
+          permanent: false,
+        },
+        {
+          source: '/default/(!public/):slug*',
+          destination: '/cs/:slug*',
+          locale: false,
+          permanent: false,
+        },
+      ])
+    )
+  },
 })
